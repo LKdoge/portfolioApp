@@ -19,16 +19,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialCount = 0
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > <Providers>
-        {children}
+      > <Providers count = {initialCount}>
+        { children}
         </Providers>
       </body>
     </html>

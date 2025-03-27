@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "@heroui/react": "^2.7.5",
+    "@reduxjs/toolkit": "^2.6.1",
     "framer-motion": "^12.6.2",
     "heroui-cli": "^1.2.2",
     "next": "15.2.3",
+    "next-redux-wrapper": "^8.1.0",
     "pg": "^8.14.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
