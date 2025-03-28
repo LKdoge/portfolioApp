@@ -1,25 +1,25 @@
-
-import Page from "../config/db-conection";
-import {Button} from '@heroui/button'; 
 import ReduxProvider from "@/lib/store/redux-provider";
-import AuthUpdater from "../lib/auth/AuthUpdater";
-import AuthViewer from "../lib/auth/AuthViewer";
+
 export default function Home() {
+
+
   return (
-    
-    <div className="">
-      <Page />
-    <div>
-      <Button isDisabled color="primary">
-          Button
-      </Button>
+    <main className="w-full h-screen grid grid-flow-col grid-rows-3 gap-4 place-items-center">
       <ReduxProvider>
-      <main className="w-full h-screen grid grid-cols-2 place-items-center">
-        <AuthUpdater />
-        <AuthViewer />
-      </main>
-    </ReduxProvider>
-    </div>
-    </div>
+        <div className="grid-cols-2">
+          <div className="grid-rows-2 gap-4">
+            <div className="grid-row">
+              hola 1
+            </div>
+            <div className="">
+              hola 2
+            </div>
+          </div>
+          <div className="">
+            hola 3
+          </div>
+        </div>
+      </ReduxProvider>
+    </main>
   );
 }
