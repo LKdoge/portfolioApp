@@ -1,7 +1,9 @@
+import ErrorAlert from "@/components/ErrorAlert";
+import InfoAlert from "@/components/InfoAlert";
+import SuccessAlert from "@/components/SuccessAlert";
 import ReduxProvider from "@/lib/store/redux-provider";
 
 export default function Home() {
-
 
   return (
     <main className="w-full h-screen grid grid-flow-col grid-rows-3 gap-4 place-items-center">
@@ -16,7 +18,9 @@ export default function Home() {
             </div>
           </div>
           <div className="">
-            hola 3
+            <InfoAlert info="Test info" message="Info!" /> 
+            <SuccessAlert info="Test success" message="Success!"/> 
+            <ErrorAlert error="Test error" message="Error!"/> 
           </div>
         </div>
       </ReduxProvider>
