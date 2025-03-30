@@ -1,4 +1,5 @@
 import InfoAlert from "@/components/ui/info-alert";
+import Loader from "@/components/ui/loader";
 
 export default function HomePage() {
   return (
@@ -6,6 +7,7 @@ export default function HomePage() {
       <h1 className="text-4xl font-bold">Welcome to My App</h1>
       <p className="mt-2 text-gray-600">This is the homepage.</p>
       <InfoAlert info="Info Alert" message="This is an info alert." />
+      <Loader />
     </main>
   );
 }

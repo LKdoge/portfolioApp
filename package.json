@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroui/react": "^2.7.5",
+    "@heroui/spinner": "^2.2.13",
     "@heroui/system": "^2.4.12",
     "@heroui/theme": "^2.4.12",
     "@heroui/toast": "^2.0.6",
