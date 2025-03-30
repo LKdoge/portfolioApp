@@ -1,29 +1,11 @@
-import ErrorAlert from "@/components/ErrorAlert";
-import InfoAlert from "@/components/InfoAlert";
-import SuccessAlert from "@/components/SuccessAlert";
-import ReduxProvider from "@/lib/store/redux-provider";
+import InfoAlert from "@/components/ui/info-alert";
 
-export default function Home() {
-
+export default function HomePage() {
   return (
-    <main className="w-full h-screen grid grid-flow-col grid-rows-3 gap-4 place-items-center">
-      <ReduxProvider>
-        <div className="grid-cols-2">
-          <div className="grid-rows-2 gap-4">
-            <div className="grid-row">
-              hola 1
-            </div>
-            <div className="">
-              hola 2
-            </div>
-          </div>
-          <div className="">
-            <InfoAlert info="Test info" message="Info!" /> 
-            <SuccessAlert info="Test success" message="Success!"/> 
-            <ErrorAlert error="Test error" message="Error!"/> 
-          </div>
-        </div>
-      </ReduxProvider>
+    <main className="flex flex-col items-center justify-center min-h-screen p-4">
+      <h1 className="text-4xl font-bold">Welcome to My App</h1>
+      <p className="mt-2 text-gray-600">This is the homepage.</p>
+      <InfoAlert info="Info Alert" message="This is an info alert." />
     </main>
   );
 }
