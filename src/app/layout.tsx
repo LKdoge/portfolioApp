@@ -2,6 +2,7 @@ import { Providers } from "./providers/providers";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
+import customConfig from "../../project.config.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tiago's Portfolio",
-  description: "This is my personal portfolio, feel free to take a look!",
+  title: customConfig.name,
+  description: customConfig.description,
 };
 
 export default function RootLayout({
@@ -26,6 +27,9 @@ export default function RootLayout({
   const initialCount = 0
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > <Providers count = {initialCount}>
