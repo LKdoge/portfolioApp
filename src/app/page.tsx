@@ -1,55 +1,81 @@
 import StaticNavbar from "@/components/ui/navbar";
-
+import IconGrid from "@/components/ui/icons/IconGrid";
+import Card_ from "@/components/ui/card";
 export default function HomePage() {
   return (
     <>
       <StaticNavbar />
-      <div className="min-w-75 grid grid-cols-none gap-4 justify-items-center">
-        <article className="my-8">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="">
-              <h1 className="text-4xl font-bold">1</h1>
-              <p className="text-gray-600">Text</p>
+      <div className="min-w-75 grid grid-cols-none gap-4 justify-items-center border-2 border-black">
+        <article className="my-8  border-3 border-red-500 p-2 w-2/3">
+        <div className="justify-items-end">
+          <Card_></Card_>
+        </div>
+          <div className="flex flex-col items-center border-2 border-blue-500 felx justify-center flex-col">
+            <div className="border-2 border-black mt-8 w-full max-w-md">
+              <img
+                src="https://i.pinimg.com/564x/21/a8/c8/21a8c882a7d18e577eef4a48eec20b46.jpg"
+                rel="image"
+              />
             </div>
+              <h1 className="text-4xl font-bold">Name del tipo</h1>
+              <p className="text-gray-600">Text intro</p>
+              <section>
+                <h2>Fundamentos</h2>
+                <p>Un dev junior conoce la estructura básica de HTML:</p>
+                <ul>
+                  <li>
+                    Etiquetas semánticas como <code>&lt;header&gt;</code>,{" "}
+                    <code>&lt;section&gt;</code> y <code>&lt;footer&gt;</code>.
+                  </li>
+                  <li>
+                    Listas (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>),
+                    tablas y formularios.
+                  </li>
+                  <li>
+                    Uso correcto de enlaces e imágenes con <code>alt</code> y{" "}
+                    <code>target="_blank"</code>.
+                  </li>
+                </ul>
+              </section>
 
-            <div className="">
-              <h1 className="text-4xl font-bold">2</h1>
-              <p className="text-gray-600">Text</p>
-            </div>
+              <section>
+                <h2>Uso de Atributos</h2>
+                <p>
+                  Maneja atributos como <code>id</code>, <code>class</code>,{" "}
+                  <code>href</code> y <code>src</code> para estructurar
+                  correctamente el contenido.
+                </p>
+              </section>
+
+              <section>
+                <h2>Integración con CSS y JS</h2>
+                <p>
+                  Conoce cómo vincular estilos con <code>&lt;link&gt;</code> y
+                  scripts con <code>&lt;script&gt;</code>, optimizando la carga
+                  con <code>defer</code>.
+                </p>
+              </section>
+          </div>
+          {/*seccion de iconos*/}
+          <div className="border-2 border-black m-2">
+            <h2 className="text-xl font-semibold mb-4">Tech & Skills</h2>
+            <IconGrid />
+          </div>
+          <div className="border-2 border-black m-2">
+            <h2 className="text-xl font-semibold mb-4">Certification</h2>
+            <IconGrid />
+          </div>
+          <div className=" border-2 border-green-500 m-px justify-items-center">
+            <p>Other Projects/xp</p>
           </div>
 
-          <div className="">
-            <h1>Título Principal del Documento</h1>
-            <p>Este es un texto de ejemplo que tiene como único propósito extenderse innecesariamente en múltiples párrafos para demostrar el uso de etiquetas HTML correctamente organizadas.</p>
-
-            <h2>Primera Sección</h2>
-            <p>En esta primera sección se abordará un tema irrelevante pero que se expandirá en múltiples líneas para dar la sensación de contenido extenso.</p>
-            <p>Muchas veces, los textos largos no aportan mayor valor, pero su estructura es fundamental para la legibilidad y comprensión del documento.</p>
-
-            <h3>Subtítulo Relacionado</h3>
-            <p>Dentro de cada sección, es importante contar con subtítulos que permitan organizar la información de manera más clara y estructurada.</p>
-            <p>Este párrafo no tiene un propósito real más allá de incrementar la cantidad de contenido dentro del documento.</p>
-
-            <h2>Segunda Sección</h2>
-            <p>A medida que avanzamos en el documento, es relevante dividir la información en nuevas secciones para mantener la coherencia.</p>
-            <p>Los lectores suelen perder interés si el contenido no está bien distribuido, lo que hace que el uso de títulos y subtítulos sea indispensable.</p>
-
-            <h3>Otro Subtítulo</h3>
-            <p>Este subtítulo es solo una excusa para continuar extendiendo el texto y ofrecer más ejemplos de cómo se pueden estructurar los documentos HTML.</p>
-            <p>Aunque no se diga nada nuevo, la organización en párrafos ayuda a la digestión del contenido.</p>
-
-            <h2>Conclusión</h2>
-            <p>En este documento se ha demostrado cómo se puede estructurar un texto innecesariamente largo utilizando HTML.</p>
-            <p>Aunque su contenido carezca de valor real, el formato es clave para una presentación efectiva de la información.</p>
-          </div>
-
-          <div className="">
-            <h1 className="text-4xl font-bold">3</h1>
-            <p className="text-gray-600">Footer</p>
-          </div>
+         
         </article>
       </div>
+      <div className=" border-2 border-black">
+            <h1 className="text-4xl font-bold">Footer</h1>
+            <p className="text-gray-600">About me</p>
+      </div>
     </>
-
   );
 }
