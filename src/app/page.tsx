@@ -1,6 +1,7 @@
 import StaticNavbar from "@/components/ui/navbar";
 import IconGrid from "@/components/ui/icons/IconGrid";
 import Card_ from "@/components/ui/card";
+import Link from "next/link";
 export default function HomePage() {
   return (
     <>
@@ -65,14 +66,18 @@ export default function HomePage() {
             <h2 className="text-xl font-semibold mb-4">Certification</h2>
             <IconGrid />
           </div>
-          <div className=" border-2 border-green-500 m-px justify-items-center">
-            <p>Other Projects/xp</p>
+          <div className=" border-2 border-green-500 m-px justify-center">
+            <Link href="/playgr" passHref> 
+              <button  className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors">
+                Projectos/XP
+              </button>
+            </Link>
           </div>
 
          
         </article>
       </div>
-      <div className=" border-2 border-black">
+      <div className=" border-2 border-black flex flex-col items-center">
             <h1 className="text-4xl font-bold">Footer</h1>
             <p className="text-gray-600">About me</p>
       </div>
