@@ -1,6 +1,5 @@
 
 import Link from 'next/link';
-
 const projects = [
   {
     id: 'counter1',

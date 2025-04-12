@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
 import customConfig from "../../project.config.json";
-
+import StaticNavbar from "@/components/ui/navbar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,8 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > <Providers count = {initialCount}>
-        { children}
-        </Providers>
+            <StaticNavbar />
+            <main>{children}</main>
+            </Providers>
       </body>
     </html>
   );

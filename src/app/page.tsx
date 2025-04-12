@@ -1,11 +1,9 @@
-import StaticNavbar from "@/components/ui/navbar";
 import IconGrid from "@/components/ui/icons/IconGrid";
 import Card_ from "@/components/ui/card";
 import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      <StaticNavbar />
       <div className="min-w-75 grid grid-cols-none gap-4 justify-items-center border-2 border-black">
         <article className="my-8  border-3 border-red-500 p-2 w-2/3">
         <div className="justify-items-end">

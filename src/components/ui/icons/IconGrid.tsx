@@ -23,7 +23,7 @@ export default function IconGrid() {
       <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-4">
         {dynamicIcons.map((item, i) => (
           <div key={i} className="flex flex-col items-center p-2">
-            <item.Icon className="w-6 h-6 text-blue-600" />
+            <item.Icon className="w-6 h-6 text-green-600" />
             <span className="mt-1 text-xs text-center">{item.name}</span>
           </div>
         ))}
