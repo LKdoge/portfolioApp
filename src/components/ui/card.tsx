@@ -25,7 +25,7 @@ export default function CustomCard() {
                     </li>
                     <li>
                       Uso correcto de enlaces e imágenes con <code>alt</code> y{" "}
-                      <code>target="_blank"</code>.
+                      <code></code>.
                     </li>
                   </ul>
                 </section>
